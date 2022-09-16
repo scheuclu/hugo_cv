@@ -112,7 +112,7 @@ def get_sections(yaml_output):
 
 if __name__ == "__main__":
 
-    INFILE = "content.yaml"
+    INFILE = "cryptonew.yaml"
 
     with open("template.tex", "r") as f:
         output = f.read()
