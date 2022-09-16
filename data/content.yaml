@@ -15,7 +15,7 @@ sections:
           - Uncertainty quantification in physical simulations using bayesian methods and machine learning
           - Design optimization. Collaborative development of a C++ HPC codebase.
       - heading:
-          label: M.Sc. Mechanical Engineerung - TUM, Munich
+          label: M.Sc. Mechanical Engineering - TUM, Munich
           startdate: Oct 2012
           enddate: Jun 2017
         degrees:
@@ -30,8 +30,15 @@ sections:
              - "[Decentralized finance - Duke University](https://coursera.org/share/0be4aacea173ecab67e917e79c1ae954)"
              - "[Full list on LinkedIn](https://www.linkedin.com/in/scheuclu/})"
 
-  - heading: Experiences
+  - heading: Work Experience
     subsections:
+      - heading:
+          label: Freelance Software Engineer - Toptal, Remote
+          startdate: May 2022
+          enddate: present
+        points:
+          - Working as a freelance engineer on projects focusing on data-science and backend engineering.
+          - Using my free time to develop an app on the side.
       - heading:
           label: Founder in Residence - Enterpreneur First, London
           startdate: Mar 2022
@@ -48,7 +55,7 @@ sections:
             Using data analysis on production logs to improve reliability across Google.
             Used tensorflow, Go and Apache flume
           - Came up with an lead an successful internal project combining data analysis and visualization.
-          - "GoogleX Data analysis on an experimental wearable device. Maintained Python codebase."
+          - "**X, the moonshot factory:** Data analysis on an experimental wearable device. Owned whole python codebase and training pipeline."
       - heading:
           label: Deep/Machine Learning Engineer - Volkswagen, Munich
           startdate: Jul 2018
@@ -56,6 +63,8 @@ sections:
         points:
           - Worked as an applied machine learning engineer, mainly on computer vision for autonomous driving.
           - Real time object detection, Model development, training, selection, compression and testing.
+  - heading: Research Work
+    subsections:
       - heading:
           label: Post Graduate Work - TUM, Munich
           startdate: Jul 2017
@@ -95,4 +104,3 @@ sections:
       - "**Developer Tools**: Git, Docker, Google Cloud Platform, VIM, IntelliJ"
       - "**Libraries**: Tensorflow, Pytorch, OpenMP, MPI, CUDA, Pandas, NumPy, Matplotlib, Plotly, Dash"
       - "**Machine Learning**: Computer Vision, Recurrent Networks, Deep Learning, Model training and selection. Model compression."
-
