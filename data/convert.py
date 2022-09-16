@@ -54,8 +54,12 @@ def create_subsection(sub):
         enddate=h['enddate' ] if 'enddate' in h else ''
 
 
-        lines+=[' '*(INDENT+2)+f'<{h["label"]}><{startdate} -- {enddate}>']
-        lines+=[' '*(INDENT+2)+f'<Stanford University><Stanford, California>']
+        jobtitle = h['label'].split('-')[0]
+        company = h['label'].split('-')[1].split(',')[0].lstrip()
+        place = h['label'].split('-')[1].split(',')[1].lstrip()
+        lines+=[' '*(INDENT+2)+f'<{jobtitle}><{startdate} -- {enddate}>']
+        lines+=[' '*(INDENT+2)+f'<{company}><{place}>']
+        #lines+=[' '*(INDENT+2)+f'< >< >']
     if 'degrees' in sub.keys():
         lines+=[' '*INDENT+f'\\resumeItemListStart']
         for d in sub['degrees']:
