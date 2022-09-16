@@ -5,31 +5,6 @@ website: scheuclu.com
 github: scheuclu
 
 sections:
-  - heading: Education
-    subsections:
-      - heading:
-          label: Post Graduate Researcher - Munich, Germany
-          startdate: Jul 2017
-          enddate: Jun 2018
-        degrees:
-          - Uncertainty quantification in physical simulations using bayesian methods and machine learning
-          - Design optimization. Collaborative development of a C++ HPC codebase.
-      - heading:
-          label: M.Sc. Mechanical Engineering - TUM, Munich
-          startdate: Oct 2012
-          enddate: Jun 2017
-        degrees:
-          - Majored in Computational Engineering and High Performance Computing.
-          - Visiting Researcher at Stanford University
-      - heading:
-          label: Professional Certifications - Online, Multiple
-        points:
-          - Total of 16 professional certifications including
-          -  - "[Blockchain Developer Nanodegree - Udacity](https://confirm.udacity.com/PRDLGCYP)"
-             - "[5-part deep learning specialization -  Deeplearning.ai](https://coursera.org/share/ec095b18337aecea2c101552eeb97dd3)"
-             - "[Decentralized finance - Duke University](https://coursera.org/share/0be4aacea173ecab67e917e79c1ae954)"
-             - "[Full list on LinkedIn](https://www.linkedin.com/in/scheuclu/})"
-
   - heading: Work Experience
     subsections:
       - heading:
@@ -84,18 +59,30 @@ sections:
           - "Application: Parametric shape optimization of flexible wings."
           - Audited Stanford lecture series on machine learning by Andrew Ng.
 
-
-# %-----------PROGRAMMING SKILLS-----------
-# \section{Technical Skills}
-#  \begin{itemize}[leftmargin=0.15in, label={}]
-#     \small{\item{
-#     \textbf{Blockchain}{: } \\
-#      \textbf{Languages}{: P} \\
-#      \textbf{Developer Tools}{: } \\
-#      \textbf{Libraries}{: }\\
-#      \textbf{Machine Learning}{: }
-#     }}
-#  \end{itemize}
+  - heading: Education
+    subsections:
+      - heading:
+          label: Post Graduate Researcher - Munich, Germany
+          startdate: Jul 2017
+          enddate: Jun 2018
+        degrees:
+          - Uncertainty quantification in physical simulations using bayesian methods and machine learning
+          - Design optimization. Collaborative development of a C++ HPC codebase.
+      - heading:
+          label: M.Sc. Mechanical Engineering - TUM, Munich
+          startdate: Oct 2012
+          enddate: Jun 2017
+        degrees:
+          - Majored in Computational Engineering and High Performance Computing.
+          - Visiting Researcher at Stanford University
+      - heading:
+          label: Professional Certifications - Online, Multiple
+        points:
+          - Total of 16 professional certifications including
+          -  - "[Blockchain Developer Nanodegree - Udacity](https://confirm.udacity.com/PRDLGCYP)"
+             - "[5-part deep learning specialization -  Deeplearning.ai](https://coursera.org/share/ec095b18337aecea2c101552eeb97dd3)"
+             - "[Decentralized finance - Duke University](https://coursera.org/share/0be4aacea173ecab67e917e79c1ae954)"
+             - "[Full list on LinkedIn](https://www.linkedin.com/in/scheuclu/})"
 
   - heading: Technical Skills
     points:
