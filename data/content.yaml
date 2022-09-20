@@ -8,13 +8,6 @@ sections:
   - heading: Work Experience
     subsections:
       - heading:
-          label: Freelance Software Engineer - Toptal, Remote
-          startdate: May 2022
-          enddate: present
-        points:
-          - Working as a freelance engineer on projects focusing on data-science and backend engineering.
-          - Using my free time to develop an app on the side.
-      - heading:
           label: Founder in Residence - Enterpreneur First, London
           startdate: Mar 2022
           enddate: May 2022
