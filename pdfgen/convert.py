@@ -130,7 +130,7 @@ if __name__ == "__main__":
 
     yaml_files = [os.path.join('../data/',f) for f in os.listdir('../data') if f.endswith("yaml")]
 
-    with open('./README.md', 'r') as f:
+    with open('../README.md', 'r') as f:
         readme = f.read()
     readme = readme[:readme.find('# Generated PDFs')]
     readme += '# Generated PDFs\n'
@@ -142,5 +142,5 @@ if __name__ == "__main__":
         process_file(infile, outfile)
         readme += f'https://www.overleaf.com/docs?snip_uri=https://raw.githubusercontent.com/scheuclu/hugo_cv/main/pdfgen/{outfile.replace("./","")}\n'
 
-    with open('./README.md', 'w') as f:
+    with open('../README.md', 'w') as f:
         f.write(readme)
