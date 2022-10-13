@@ -12,5 +12,3 @@ This reduces my workload a lot, and also makes it much easier to make changes.
 
 ## Generated PDFs
 https://www.overleaf.com/docs?snip_uri=https://raw.githubusercontent.com/scheuclu/hugo_cv/main/pdfgen/content.tex
-
- TEST
