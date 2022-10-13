@@ -102,7 +102,7 @@ def get_sections(yaml_output):
 def process_file(infile, outfile):
 
 
-    with open("template.tex", "r") as f:
+    with open("pdfgen/template.tex", "r") as f:
         output = f.read()
 
     with open(infile, "r") as stream:
@@ -128,19 +128,20 @@ def process_file(infile, outfile):
 import os
 if __name__ == "__main__":
 
-    yaml_files = [os.path.join('../data/',f) for f in os.listdir('../data') if f.endswith("yaml")]
+    yaml_files = [os.path.join('data/',f) for f in os.listdir('data') if f.endswith("yaml")]
+    print("yaml_files", yaml_files)
 
-    with open('../README.md', 'r') as f:
+    with open('README.md', 'r') as f:
         readme = f.read()
     readme = readme[:readme.find('# Generated PDFs')]
     readme += '# Generated PDFs\n'
     
 
     for infile in yaml_files:
-        outfile = infile.replace('yaml','tex').replace('../data/', './')
+        outfile = infile.replace('yaml','tex').replace('data/', 'pdfgen/')
         print(f"{infile}->{outfile}")
         process_file(infile, outfile)
-        readme += f'https://www.overleaf.com/docs?snip_uri=https://raw.githubusercontent.com/scheuclu/hugo_cv/main/pdfgen/{outfile.replace("./","")}\n'
+        readme += f'https://www.overleaf.com/docs?snip_uri=https://raw.githubusercontent.com/scheuclu/hugo_cv/main/{outfile.replace("./","")}\n'
 
-    with open('../README.md', 'w') as f:
+    with open('README.md', 'w') as f:
         f.write(readme)
