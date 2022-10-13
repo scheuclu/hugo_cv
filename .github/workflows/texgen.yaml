@@ -11,14 +11,14 @@ jobs:
     permissions: write-all
     runs-on: ubuntu-20.04
     steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+          cache: 'pip' # caching pip dependencies
       - name: Create files
-        - uses: actions/checkout@v3
-        - uses: actions/setup-python@v4
-          with:
-            python-version: '3.9'
-            cache: 'pip' # caching pip dependencies
-        - run: pip install -r requirements.txt
-        - run: python pdfgen/convert.py
+        run: pip install -r requirements.txt
+        run: python pdfgen/convert.py
 
       - name: Commit files
         run: |
