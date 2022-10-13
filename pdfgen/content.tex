@@ -1,0 +1,236 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+% \usepackage[]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+ \usepackage[sfdefault]{sans} % well readable
+
+% serif
+ %\usepackage{charter} % fancy
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+% \urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\definecolor{GoogleGreen}{RGB}{60, 186, 84}
+\definecolor{GoogleYellow}{RGB}{244, 194, 13}
+\definecolor{GoogleBlue}{RGB}{72, 133, 237}
+\definecolor{GoogleRed}{RGB}{219, 50, 54}
+\newcommand{\GoogleLogo}{{\textcolor{GoogleBlue}{G}\textcolor{GoogleRed}{o}\textcolor{GoogleYellow}{o}\textcolor{GoogleBlue}{g}\textcolor{GoogleGreen}{l}\textcolor{GoogleRed}{e}}}
+
+%\usepackage{hyperref}% http://ctan.org/pkg/hyperref
+% \hypersetup{
+%   colorlinks=true,
+%   linkcolor=blue!50!red,
+%   urlcolor=green!70!blue
+% }
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks = true,
+    linkcolor=blue!50!red,
+    urlcolor=[RGB]{29, 68, 128}
+}
+
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+\begin{center}
+    \textbf{\Huge \scshape Lukas Scheucher} \\ \vspace{1pt}
+%     \small <<phone>> $|$ \href{mailto:lukas@scheuclu.com}{\underline{lukas@scheuclu.com}} $|$
+    \href{mailto:lukas@scheuclu.com}{\underline{lukas@scheuclu.com}} $|$
+    % \href{https://linkedin.com/in/<<linkedin>>}{\underline{linkedin.com/in/<<linkedin>>}} $|$
+    \href{https://github.com/scheuclu}{\underline{github.com/scheuclu}} $|$
+    \href{https://scheuclu.com}{\underline{scheuclu.com}}
+\end{center}
+
+
+
+%-------------------------------------------
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Post Graduate Researcher }{Jul 2017 -- Jun 2018}
+      {Munich}{Germany}
+    \resumeItemListStart
+      \resumeItem{Uncertainty quantification in physical simulations using bayesian methods and machine learning}
+      \resumeItem{Design optimization. Collaborative development of a C++ HPC codebase.}
+    \resumeItemListEnd
+    \resumeSubheading
+      {M.Sc. Mechanical Engineering }{Oct 2012 -- Jun 2017}
+      {TUM}{Munich}
+    \resumeItemListStart
+      \resumeItem{Majored in Computational Engineering and High Performance Computing.}
+      \resumeItem{Visiting Researcher at Stanford University}
+    \resumeItemListEnd
+    \resumeSubheading
+      {Professional Certifications }{ -- }
+      {Online}{Multiple}
+    \resumeItemListStart
+      \resumeItem{Total of 16 professional certifications including}
+      \resumeItemListStart
+        \resumeItem{\href{https://confirm.udacity.com/PRDLGCYP}{Blockchain Developer Nanodegree - Udacity}}
+        \resumeItem{\href{https://coursera.org/share/ec095b18337aecea2c101552eeb97dd3}{5-part deep learning specialization -  Deeplearning.ai}}
+        \resumeItem{\href{https://coursera.org/share/0be4aacea173ecab67e917e79c1ae954}{Decentralized finance - Duke University}}
+        \resumeItem{\href{https://www.linkedin.com/in/scheuclu/}}{Full list on LinkedIn}}
+      \resumeItemListEnd
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Work Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Freelance Software Engineer }{May 2022 -- present}
+      {Toptal}{Remote}
+    \resumeItemListStart
+      \resumeItem{Working as a freelance engineer on projects focusing on data-science and backend engineering.}
+      \resumeItem{Using my free time to develop an app on the side.}
+    \resumeItemListEnd
+    \resumeSubheading
+      {Founder in Residence }{Mar 2022 -- May 2022}
+      {Enterpreneur First}{London}
+    \resumeItemListStart
+      \resumeItem{I was accepted into the 2022 cohort and spent 2 months working with dedicated individuals on blockchain/web3 ideas.}
+      \resumeItem{Unfortunately, I did not find the right co-founder/idea.}
+    \resumeItemListEnd
+    \resumeSubheading
+      {Software Engineer }{Nov 2019 -- Dec 2021}
+      {Google}{Munich}
+    \resumeItemListStart
+      \resumeItem{Using data analysis on production logs to improve reliability across Google. Used tensorflow, Go and Apache flume}
+      \resumeItem{Came up with an lead an successful internal project combining data analysis and visualization.}
+      \resumeItem{ \textbf{X, the moonshot factory:} Data analysis on an experimental wearable device. Owned whole python codebase and training pipeline.}
+    \resumeItemListEnd
+    \resumeSubheading
+      {Deep/Machine Learning Engineer }{Jul 2018 -- Oct 2019}
+      {Volkswagen}{Munich}
+    \resumeItemListStart
+      \resumeItem{Worked as an applied machine learning engineer, mainly on computer vision for autonomous driving.}
+      \resumeItem{Real time object detection, Model development, training, selection, compression and testing.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Research Work}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Post Graduate Work }{Jul 2017 -- Jun 2018}
+      {TUM}{Munich}
+    \resumeItemListStart
+      \resumeItem{Uncertainty quantification in physical simulations using bayesian methods and machine learning.}
+      \resumeItem{Design optimization under uncertainty.}
+      \resumeItem{Collaborative development of a C++ research code (Full CI/CD pipeline).}
+      \resumeItem{Visualization of complex simulation output using Paraview, Plotly, D3.js, ...}
+      \resumeItem{Held several positions as teaching assistant.}
+    \resumeItemListEnd
+    \resumeSubheading
+      {Visiting Graduate Researcher }{Oct 2016 -- Jul 2017}
+      {Stanford University}{California}
+    \resumeItemListStart
+      \resumeItem{Implemented gradient computation in a C++ fluid dynamics \href{https://bitbucket.org/frg/aero-f/src/master/}{code}}
+      \resumeItem{Application: Parametric shape optimization of flexible wings.}
+      \resumeItem{Audited Stanford lecture series on machine learning by Andrew Ng.}
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+\section{Technical Skills}
+  \resumeItemListStart
+    \resumeItem{ \textbf{Blockchain}: Bitcoin, Ethereum, Solidity, web3.js, Smart-Contracts}
+    \resumeItem{ \textbf{Languages}: Python, C++, Solidity, Go, SQL, Javascript, Bash}
+    \resumeItem{ \textbf{Developer Tools}: Git, Docker, Google Cloud Platform, VIM, IntelliJ}
+    \resumeItem{ \textbf{Libraries}: Tensorflow, Pytorch, OpenMP, MPI, CUDA, Pandas, NumPy, Matplotlib, Plotly, Dash}
+    \resumeItem{ \textbf{Machine Learning}: Computer Vision, Recurrent Networks, Deep Learning, Model training and selection. Model compression.}
+  \resumeItemListEnd
+
+
+%-------------------------------------------
+\end{document}
