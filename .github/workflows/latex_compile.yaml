@@ -8,14 +8,15 @@ on:
   pull_request:
 
 jobs:
-  latexcompile:
+  latex-job:
     runs-on: ubuntu-latest
+    name: A job to Compile Latex file
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v2
-
-      - name: Generate PDF document
-        uses: hspaans/latexmk-action@v1
-        with:
-          format: pdf
-          filename: pdfgen/content.tex
+    - uses: actions/checkout@v1
+    - name: Compilation
+      uses: vinay0410/tectonic-action@master
+      env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tex_path: 'pdfgen/content.tex'
+        push: 'yes'
