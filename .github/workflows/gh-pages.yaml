@@ -7,16 +7,6 @@ on:
   pull_request:
 
 jobs:
-  textgen:
-    runs-on: ubuntu-20.04
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-python@v4
-        with:
-          python-version: '3.9'
-          cache: 'pip' # caching pip dependencies
-      - run: pip install -r requirements.txt
-      - run: python pdfgen/convert.py
   deploy:
     runs-on: ubuntu-20.04
     steps:
