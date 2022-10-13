@@ -1,0 +1,21 @@
+
+name: latex_compile
+
+on:
+  push:
+    branches:
+      - main  # Set a branch to deploy
+  pull_request:
+
+jobs:
+  latexcompile:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Generate PDF document
+        uses: hspaans/latexmk-action@v1
+        with:
+          format: pdf
+          filename: pdfgen/content.tex
