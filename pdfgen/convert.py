@@ -144,4 +144,4 @@ if __name__ == "__main__":
         readme += f'https://www.overleaf.com/docs?snip_uri=https://raw.githubusercontent.com/scheuclu/hugo_cv/main/{outfile.replace("./","")}\n'
 
     with open('README.md', 'w') as f:
-        f.write(readme)
+        f.write(readme+"\n TEST")
