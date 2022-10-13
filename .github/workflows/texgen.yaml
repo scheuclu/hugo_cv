@@ -17,8 +17,9 @@ jobs:
           python-version: '3.9'
           cache: 'pip' # caching pip dependencies
       - name: Create files
-        run: pip install -r requirements.txt
-        run: python pdfgen/convert.py
+        run:  |
+          pip install -r requirements.txt
+          python pdfgen/convert.py
 
       - name: Commit files
         run: |
