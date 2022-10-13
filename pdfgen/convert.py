@@ -1,16 +1,6 @@
-
-
 import os
-
-os.listdir('..')
-
-
-
 import yaml
 import re
-
-
-
 
 def curly(s):
     return s.replace('<','{').replace('>','}')
@@ -40,8 +30,6 @@ def markdown_links(s):
         s = s.replace(f'[{site.group(1)}]', f'\\href<{url.group(1)}>')
         s = s.replace(f'({url.group(1)})', f'<{site.group(1)}>')
     return s
-
-
 
 
 def create_subsection(sub):
@@ -110,17 +98,17 @@ def get_sections(yaml_output):
     return '\n'.join(lines)
 
 
-if __name__ == "__main__":
 
-    INFILE = "cryptonew.yaml"
+def process_file(infile, outfile):
+
 
     with open("template.tex", "r") as f:
         output = f.read()
 
-    with open(INFILE, "r") as stream:
+    with open(infile, "r") as stream:
         try:
             result = yaml.safe_load(stream)
-            print(result)
+            ###print(result)
         except yaml.YAMLError as exc:
             print(exc)
     s = get_sections(result)
@@ -133,7 +121,26 @@ if __name__ == "__main__":
     # output = output.replace('<<linkedin>>', result['linkedin'])
     # output = output.replace('<<phone>>', result['phone'])
 
-    with open(INFILE.replace('yaml','tex'), 'w') as f:
+    with open(outfile, 'w') as f:
         f.write(output)
 
-    print(output)
+
+import os
+if __name__ == "__main__":
+
+    yaml_files = [os.path.join('../data/',f) for f in os.listdir('../data') if f.endswith("yaml")]
+
+    with open('./README.md', 'r') as f:
+        readme = f.read()
+    readme = readme[:readme.find('# Generated PDFs')]
+    readme += '# Generated PDFs\n'
+    
+
+    for infile in yaml_files:
+        outfile = infile.replace('yaml','tex').replace('../data/', './')
+        print(f"{infile}->{outfile}")
+        process_file(infile, outfile)
+        readme += f'https://www.overleaf.com/docs?snip_uri=https://raw.githubusercontent.com/scheuclu/hugo_cv/main/pdfgen/{outfile.replace("./","")}\n'
+
+    with open('./README.md', 'w') as f:
+        f.write(readme)
