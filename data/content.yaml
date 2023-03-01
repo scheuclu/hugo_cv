@@ -9,6 +9,13 @@ sections:
   - heading: Work Experience
     subsections:
       - heading:
+          label: Founding Product Engineer- Jobprotocol, Remote
+          startdate: Jan 2023
+          enddate: present
+        points:
+          - I am the first and only engineer on the team, responsible for the whole product
+          - Frontend, backend, web3 work
+      - heading:
           label: Freelance Software Engineer - Toptal, Remote
           startdate: May 2022
           enddate: present
@@ -23,7 +30,7 @@ sections:
           - I was accepted into the 2022 cohort and spent 2 months working with dedicated individuals on blockchain/web3 ideas.
           - Unfortunately, I did not find the right co-founder/idea.
       - heading:
-          label: "Software Engineer - Google, Munich"
+          label: "Software Engineer - Google, Munich" 
           startdate: Nov 2019
           enddate: Dec 2021
         points:
@@ -71,11 +78,19 @@ sections:
           - Design optimization. Collaborative development of a C++ HPC codebase.
       - heading:
           label: M.Sc. Mechanical Engineering - TUM, Munich
-          startdate: Oct 2012
+          startdate: Oct 2015
           enddate: Jun 2017
         degrees:
           - Majored in Computational Engineering and High Performance Computing.
           - Visiting Researcher at Stanford University
+          - Overall Grade 1.6. Final theses 1.0.
+      - heading:
+          label: B.Sc. Mechanical Engineering - TUM, Munich
+          startdate: Oct 2012
+          enddate: Jun 2015
+        degrees:
+          - Majored in Mechanical Engineering
+          - Overall Grade 1.4. Final theses 1.0.
       - heading:
           label: Professional Certifications - Online, Multiple
         points:
@@ -100,9 +115,12 @@ sections:
 
   - heading: Technical Skills
     points:
-      - "**Blockchain**: Bitcoin, Ethereum, Solidity, web3.js, Smart-Contracts"
       - "**Languages**: Python, C++, Solidity, Go, SQL, Javascript, Bash"
+      - "**Frontend**: Next, React, CSS, SASS"
+      - "**Backend**: Postgres, SQL, API development, Databases, Devops"
+      - "**Machine Learning**: Computer Vision, Recurrent Networks, Deep Learning, Model training and selection. Model compression."
+      - "**Blockchain**: Bitcoin, Ethereum, Solidity, web3.js, Smart-Contracts"
       - "**Developer Tools**: Git, Docker, Google Cloud Platform, VIM, IntelliJ"
       - "**Libraries**: Tensorflow, Pytorch, OpenMP, MPI, CUDA, Pandas, NumPy, Matplotlib, Plotly, Dash"
-      - "**Machine Learning**: Computer Vision, Recurrent Networks, Deep Learning, Model training and selection. Model compression."
+      
 
