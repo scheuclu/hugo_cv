@@ -7,15 +7,23 @@ github: scheuclu
 
 sections:
   - heading: Work Experience
+    logos:
+      - /logo_jobprotocol.png
+      - /logo_toptal.png
+      - /logo_google.png
+      - /logo_volkswagen.png
     subsections:
       - heading:
-          label: Founding Product Engineer- Jobprotocol, Remote
+          logo: /logo_jobprotocol.png
+          label: Founding Product Engineer- Jobprotocol, Remote 
           startdate: Jan 2023
           enddate: present
         points:
           - I am the first and only engineer on the team, responsible for the whole product
-          - Frontend, backend, web3 work
+          - Frontend, backend, web3 work 
+
       - heading:
+          logo: /logo_toptal.png
           label: Freelance Software Engineer - Toptal, Remote
           startdate: May 2022
           enddate: present
@@ -23,6 +31,7 @@ sections:
           - Working as a freelance engineer on projects focusing on data-science and backend engineering.
           - Using my free time to develop an app on the side.
       - heading:
+          logo: /logo_ef.png
           label: Founder in Residence - Enterpreneur First, London
           startdate: Mar 2022
           enddate: May 2022
@@ -30,6 +39,7 @@ sections:
           - I was accepted into the 2022 cohort and spent 2 months working with dedicated individuals on blockchain/web3 ideas.
           - Unfortunately, I did not find the right co-founder/idea.
       - heading:
+          logo: /logo_google.png
           label: "Software Engineer - Google, Munich" 
           startdate: Nov 2019
           enddate: Dec 2021
@@ -40,6 +50,7 @@ sections:
           - Came up with an lead an successful internal project combining data analysis and visualization.
           - "**X, the moonshot factory:** Data analysis on an experimental wearable device. Owned whole python codebase and training pipeline."
       - heading:
+          logo: /logo_volkswagen.png
           label: Deep/Machine Learning Engineer - Volkswagen, Munich
           startdate: Jul 2018
           enddate: Oct 2019
@@ -47,8 +58,11 @@ sections:
           - Worked as an applied machine learning engineer, mainly on computer vision for autonomous driving.
           - Real time object detection, Model development, training, selection, compression and testing.
   - heading: Research Work
+    logos:
+      - /logo_stanford.png
     subsections:
       - heading:
+          logo: /logo_tum.png
           label: Post Graduate Work - TUM, Munich
           startdate: Jul 2017
           enddate: Jun 2018
@@ -59,6 +73,7 @@ sections:
           - Visualization of complex simulation output using Paraview, Plotly, D3.js, ...
           - Held several positions as teaching assistant.
       - heading:
+          logo: /logo_stanford.png
           label: Visiting Graduate Researcher - Stanford University, California
           startdate: Oct 2016
           enddate: Jul 2017
@@ -68,8 +83,11 @@ sections:
           - Audited Stanford lecture series on machine learning by Andrew Ng.
           
   - heading: Education
+    logos:
+      - /logo_tum.png
     subsections:
       - heading:
+          logo: /logo_tum.png
           label: Post Graduate Researcher - Munich, Germany
           startdate: Jul 2017
           enddate: Jun 2018
@@ -77,6 +95,7 @@ sections:
           - Uncertainty quantification in physical simulations using bayesian methods and machine learning
           - Design optimization. Collaborative development of a C++ HPC codebase.
       - heading:
+          logo: /logo_tum.png
           label: M.Sc. Mechanical Engineering - TUM, Munich
           startdate: Oct 2015
           enddate: Jun 2017
@@ -85,6 +104,7 @@ sections:
           - Visiting Researcher at Stanford University
           - Overall Grade 1.6. Final theses 1.0.
       - heading:
+          logo: /logo_tum.png
           label: B.Sc. Mechanical Engineering - TUM, Munich
           startdate: Oct 2012
           enddate: Jun 2015
@@ -114,6 +134,16 @@ sections:
 #  \end{itemize}
 
   - heading: Technical Skills
+    logos:
+      - /logo_python.png
+      - /logo_pytorch.png
+      - /logo_react.png
+      - /logo_sql.png
+      - /logo_linux.png
+      - /logo_typescript.png
+      - /logo_go.png
+      - /logo_ethereum.png
+      - /logo_aws.png
     points:
       - "**Languages**: Python, C++, Solidity, Go, SQL, Javascript, Bash"
       - "**Frontend**: Next, React, CSS, SASS"
