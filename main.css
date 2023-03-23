@@ -12,7 +12,8 @@ h6 {
   margin: 0 0 5px; }
 
 h1 {
-  font-size: 50px; }
+  font-size: 50px;
+  text-align: center; }
 
 h2 {
   font-size: 18px;
@@ -51,6 +52,15 @@ ul {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+
+.logo-and-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  gap: 5px;
+  align-items: center; }
 
 a {
   text-decoration: none; }
