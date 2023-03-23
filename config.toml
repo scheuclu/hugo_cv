@@ -1,6 +1,6 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'CV Lukas Scheucher'
-theme = "simple-resume"
+theme = "hugo-resume"
 
 custom_css = ["css/button.css"]
