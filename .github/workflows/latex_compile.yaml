@@ -27,4 +27,4 @@ jobs:
         run: |
           git add pdfgen/cv.pdf
           git commit -m "Auto-generated PDF" --no-verify
-          git push origin master --force
+          git push origin main --force
