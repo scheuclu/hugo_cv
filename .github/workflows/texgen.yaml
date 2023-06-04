@@ -16,11 +16,19 @@ jobs:
         with:
           python-version: '3.9'
           cache: 'pip' # caching pip dependencies
-      - name: Create files
+      - name: Delete existing tex file
+        run:  |
+          rm ./pdfgen/content.tex
+      - name: Create new tex file
         run:  |
           pip install -r requirements.txt
           python pdfgen/convert.py
-
+      - name: List created files
+        run:  |
+          ls pdfgen
+      - name: Setup git config
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
       - name: Commit files
         run: |
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
