@@ -1,22 +1,18 @@
-
-name: latex_compile
-
+name: Build LaTeX document
 on:
-  push:
-    branches:
-      - main  # Set a branch to deploy
-  pull_request:
-
+  push
 jobs:
-  latex-job:
+  build_latex:
     runs-on: ubuntu-latest
-    name: A job to Compile Latex file
     steps:
-    - uses: actions/checkout@v1
-    - name: Compilation
-      uses: vinay0410/tectonic-action@master
-      env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        tex_path: 'pdfgen/content.tex'
-        push: 'yes'
+      - name: Set up Git repository
+        uses: actions/checkout@v3
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: pdfgen/content.tex
+      - name: Upload PDF file
+        uses: actions/upload-artifact@v3
+        with:
+          name: PDF
+          path: main.pdf
