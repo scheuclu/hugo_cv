@@ -14,14 +14,14 @@ sections:
       - /logo_google.png
       - /logo_volkswagen.png
     subsections:
-      - heading:
-          logo: /logo_jobprotocol.png
-          label: Founding Product Engineer- Jobprotocol, Remote 
-          startdate: Jan 2023
-          enddate: present
-        points:
-          - I am the first and only engineer on the team, responsible for the whole product
-          - Frontend, backend, web3 work 
+      # - heading:
+      #     logo: /logo_jobprotocol.png
+      #     label: Founding Product Engineer- Jobprotocol, Remote 
+      #     startdate: Jan 2023
+      #     enddate: present
+      #   points:
+      #     - I am the first and only engineer on the team, responsible for the whole product
+      #     - Frontend, backend, web3 work 
 
       - heading:
           logo: /logo_toptal.png
@@ -31,6 +31,8 @@ sections:
         points:
           - Working as a freelance engineer on projects focusing on data-science and backend engineering.
           - Using my free time to develop an app on the side.
+          - Among others I worked as founding engineer for [Jobprotocol](https://jobprotocol.xyz/), a blockchain based job platform.
+            As well as [CompassLabs](https://www.compasslabs.ai), an algorithmic trading startup.
       - heading:
           logo: /logo_ef.png
           label: Founder in Residence - Enterpreneur First, London
@@ -49,7 +51,7 @@ sections:
             Using data analysis on production logs to improve reliability across Google.
             Used tensorflow, Go and Apache flume
           - Came up with an lead an successful internal project combining data analysis and visualization.
-          - "**X, the moonshot factory:** Data analysis on an experimental wearable device. Owned whole python codebase and training pipeline."
+          - "**Google X** \"the moonshot factory\": Data analysis on an experimental wearable device. Owned whole python codebase and training pipeline."
       - heading:
           logo: /logo_volkswagen.png
           label: Deep/Machine Learning Engineer - Volkswagen, Munich
