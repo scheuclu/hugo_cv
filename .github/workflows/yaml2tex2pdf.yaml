@@ -19,6 +19,9 @@ jobs:
       - name: Delete existing tex file
         run:  |
           rm ./pdfgen/content.tex
+      - name: Make sure file was deleted
+        run:  |
+          ls pdfgen
       - name: Create new tex file
         run:  |
           pip install -r requirements.txt
@@ -32,7 +35,7 @@ jobs:
           git config user.email "<>"
       - name: Commit files
         run: |
-          git add pdfgen/*.tex
+          git add pdfgen/content.tex
           git commit -m "Add changes" --no-verify
           git push origin main --force
       # - name: Push changes
@@ -47,6 +50,9 @@ jobs:
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v3
+      - name: Delete PDF
+        run: |
+          rm pdfgen/cv.pdf
       - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v2
         with:
