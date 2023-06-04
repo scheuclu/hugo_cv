@@ -105,3 +105,15 @@ header {
 @media print {
   html {
     zoom: 1.05; } }
+
+/* Style buttons */
+.downloadBtn {
+  background-color: rgba(234, 234, 234, 0);
+  border: 1px solid #a2a2a2;
+  border-radius: 2px;
+  padding: 2px 8px;
+  box-shadow: 2px 2px 5px #c5c5c5; }
+
+/* Darker background on mouse-over */
+.downloadBtn:hover {
+  background-color: #dadada; }
