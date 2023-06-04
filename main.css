@@ -117,3 +117,7 @@ header {
 /* Darker background on mouse-over */
 .downloadBtn:hover {
   background-color: #dadada; }
+
+.download-cv {
+  display: flex;
+  justify-content: end; }
