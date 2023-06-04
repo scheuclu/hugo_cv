@@ -94,7 +94,7 @@ def get_sections(yaml_output):
         lines += [""]
 
 
-    lines = [curly(bold(markdown_links(l))) for l in lines]
+    lines = [curly(l) for l in lines]
     return '\n'.join(lines)
 
 
@@ -105,9 +105,11 @@ def process_file(infile, outfile):
     with open("pdfgen/template.tex", "r") as f:
         output = f.read()
 
-    with open(infile, "r") as stream:
+    with open(infile, "r") as f:
+        t=f.read()
+        t=markdown_links(t)
         try:
-            result = yaml.safe_load(stream)
+            result = yaml.safe_load(t)
             ###print(result)
         except yaml.YAMLError as exc:
             print(exc)
@@ -135,7 +137,7 @@ if __name__ == "__main__":
         readme = f.read()
     readme = readme[:readme.find('# Generated PDFs')]
     readme += '# Generated PDFs\n'
-    
+
 
     for infile in yaml_files:
         outfile = infile.replace('yaml','tex').replace('data/', 'pdfgen/')
