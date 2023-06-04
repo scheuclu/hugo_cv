@@ -4,7 +4,8 @@ email: lukas@scheuclu.com
 #phone: '2125121957'
 website: scheuclu.com
 github: scheuclu
-downloadlink: https://raw.githubusercontent.com/scheuclu/hugo_cv/main/pdfgen/cv.pdf
+# https://raw.githubusercontent.com/scheuclu/hugo_cv/main/pdfgen/cv.pdf
+downloadlink: https://drive.google.com/file/d/1d8_S0sWV_PkVYqNJpqlG9AS-oP9Slg5p/view?usp=sharing
 
 sections:
   - heading: Work Experience
