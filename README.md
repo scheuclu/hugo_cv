@@ -18,3 +18,10 @@ Here's what the rendered CV looks like:
 
 ## Generated PDFs
 https://www.overleaf.com/docs?snip_uri=https://raw.githubusercontent.com/scheuclu/hugo_cv/main/pdfgen/content.tex
+
+
+## Dev
+To update submodules:
+```
+git submodule foreach git pull origin master
+```
