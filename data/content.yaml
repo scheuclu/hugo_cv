@@ -5,7 +5,7 @@ email: lukas@scheuclu.com
 website: scheuclu.com
 github: scheuclu
 # https://raw.githubusercontent.com/scheuclu/hugo_cv/main/pdfgen/cv.pdf
-downloadlink: https://drive.google.com/file/d/1d8_S0sWV_PkVYqNJpqlG9AS-oP9Slg5p/view?usp=sharing
+downloadlink: https://drive.google.com/file/d/1cwTlfPPMLef-gv71QqaRxkU06rdi_qAi/view?usp=sharing
 
 sections:
   - heading: Work Experience
@@ -32,8 +32,7 @@ sections:
         points:
           - Working as a freelance engineer on projects focusing on data-science and backend engineering.
           - Using my free time to develop an app on the side.
-          - Among others I worked as founding engineer for [Jobprotocol](https://jobprotocol.xyz/), a blockchain based job platform.
-            As well as [CompassLabs](https://www.compasslabs.ai), an algorithmic trading startup.
+          - At the moment I am working for [CompassLabs](www.compasslabs.ai) as the principal software engineer. We develop backtesting software for cypto hedge funds, where I work accross the whole stack.
       - heading:
           logo: /logo_ef.png
           label: Founder in Residence - Enterpreneur First, London
@@ -52,7 +51,7 @@ sections:
             Using data analysis on production logs to improve reliability across Google.
             Used tensorflow, Go and Apache flume
           - Came up with an lead an successful internal project combining data analysis and visualization.
-          - "**Google X** \"the moonshot factory\": Data analysis on an experimental wearable device. Owned whole python codebase and training pipeline."
+          - "**Google X** \"the moonshot factory\": Data analysis on an experimental wearable device. Owned whole Python codebase and training pipeline."
       - heading:
           logo: /logo_volkswagen.png
           label: Deep/Machine Learning Engineer - Volkswagen, Munich
