@@ -15,24 +15,25 @@ sections:
       - /logo_google.png
       - /logo_volkswagen.png
     subsections:
-      # - heading:
-      #     logo: /logo_jobprotocol.png
-      #     label: Founding Product Engineer- Jobprotocol, Remote 
-      #     startdate: Jan 2023
-      #     enddate: present
-      #   points:
-      #     - I am the first and only engineer on the team, responsible for the whole product
-      #     - Frontend, backend, web3 work 
 
       - heading:
-          logo: /logo_toptal.png
-          label: Freelance Software Engineer - Toptal, Remote
-          startdate: May 2022
+          logo: /logo_compass.png
+          label: Principal Software Enginer - Compass Labs, London
+          startdate: March 2023
           enddate: present
         points:
+          - As the main engineer, I built our backtesting tool, visualization dashboard as well as our backend on GCP.
+          - Active engagement with customers, resolving their issues and improving documentations.
+          - I have had the opportunity to actively help shape the direction of the company.
+      - heading:
+          logo: /logo_toptal.png
+          label: Freelance Software Engineer, Remote
+          startdate: May 2022
+          enddate: March 2023
+        points:
           - Working as a freelance engineer on projects focusing on data-science and backend engineering.
-          - Using my free time to develop an app on the side.
-          - At the moment I am working for [CompassLabs](www.compasslabs.ai) as the principal software engineer. We develop backtesting software for cypto hedge funds, where I work accross the whole stack.
+          - Thanks to my broad background, I've been helping early-stage startups building up their MVPs, setting up their backend and CI/CD pipelines, improving their code, etc.
+          - Working with Toptal, A.team and other platforms.
       - heading:
           logo: /logo_ef.png
           label: Founder in Residence - Enterpreneur First, London
