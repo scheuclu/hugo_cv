@@ -121,3 +121,33 @@ header {
 .download-cv {
   display: flex;
   justify-content: end; }
+
+a {
+  color: #012a71; }
+
+a:visited {
+  color: #012a71; }
+
+@media print {
+  .download-cv {
+    display: none; }
+  .box {
+    background-color: transparent;
+    box-shadow: none;
+    margin: auto;
+    position: relative;
+    width: 790px; }
+    .box::before, .box::after {
+      background: transparent;
+      bottom: 12px;
+      box-shadow: none;
+      content: ' ';
+      height: 10px;
+      left: 12px;
+      position: absolute;
+      width: 40%;
+      z-index: -1; }
+    .box::after {
+      left: auto;
+      right: 12px;
+      transform: skew(5deg) rotate(5deg); } }
