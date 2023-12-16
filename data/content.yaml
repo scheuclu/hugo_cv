@@ -2,7 +2,8 @@
 name: Lukas Scheucher
 email: lukas@scheuclu.com
 #phone: '2125121957'
-website: scheuclu.com
+# website: scheuclu.com
+linkedin: scheuclu
 github: scheuclu
 # https://raw.githubusercontent.com/scheuclu/hugo_cv/main/pdfgen/cv.pdf
 downloadlink: https://drive.google.com/file/d/1cwTlfPPMLef-gv71QqaRxkU06rdi_qAi/view?usp=sharing
@@ -10,7 +11,7 @@ downloadlink: https://drive.google.com/file/d/1cwTlfPPMLef-gv71QqaRxkU06rdi_qAi/
 sections:
   - heading: Work Experience
     logos:
-      - /logo_jobprotocol.png
+      - /logo_compass.png
       - /logo_toptal.png
       - /logo_google.png
       - /logo_volkswagen.png
@@ -23,16 +24,24 @@ sections:
       #   points:
       #     - I am the first and only engineer on the team, responsible for the whole product
       #     - Frontend, backend, web3 work 
-
       - heading:
           logo: /logo_toptal.png
-          label: Freelance Software Engineer - Toptal, Remote
-          startdate: May 2022
+          label: Principal Software Enginer - Compass Labs, London
+          startdate: March 2023
           enddate: present
         points:
+          - As the main engineer, I built our backtesting tool, visualization dashboard as well as our backend on GCP.
+          - Active engagement with customers, resolving their issues and improving documentations.
+          - I have had the opportunity to actively help shape the direction of the company.
+      - heading:
+          logo: /logo_toptal.png
+          label: Freelance Software Engineer, Remote
+          startdate: May 2022
+          enddate: March 2023
+        points:
           - Working as a freelance engineer on projects focusing on data-science and backend engineering.
-          - Using my free time to develop an app on the side.
-          - At the moment I am working for [CompassLabs](www.compasslabs.ai) as the principal software engineer. We develop backtesting software for cypto hedge funds, where I work accross the whole stack.
+          - Thanks to my broad background, I've been helping early-stage startups building up their MVPs, setting up their backend and CI/CD pipelines, improving their code, etc.
+          - Working with Toptal, A.team and other platforms.
       - heading:
           logo: /logo_ef.png
           label: Founder in Residence - Enterpreneur First, London
@@ -150,7 +159,7 @@ sections:
     points:
       - "**Languages**: Python, C++, Solidity, Go, SQL, Javascript, Bash"
       - "**Frontend**: Next, React, CSS, SASS"
-      - "**Backend**: Postgres, SQL, API development, Databases, Devops"
+      - "**Backend**: Postgres, SQL, API development, Databases, DevOps, CI/CD"
       - "**Machine Learning**: Computer Vision, Recurrent Networks, Deep Learning, Model training and selection. Model compression."
       - "**Blockchain**: Bitcoin, Ethereum, Solidity, web3.js, Smart-Contracts"
       - "**Developer Tools**: Git, Docker, Google Cloud Platform, VIM, IntelliJ"
