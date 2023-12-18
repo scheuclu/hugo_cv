@@ -6,7 +6,7 @@ phone: '(+43)-677-6200-3595'
 linkedin: scheuclu
 github: scheuclu
 # https://raw.githubusercontent.com/scheuclu/hugo_cv/main/pdfgen/cv.pdf
-downloadlink: https://drive.google.com/file/d/1cwTlfPPMLef-gv71QqaRxkU06rdi_qAi/view?usp=sharing
+downloadlink: https://drive.google.com/file/d/1_9mdCBofNIQEMvAXAHqyp2wSFxRkgKI6/view?usp=sharing
 
 sections:
   - heading: Work Experience
@@ -19,7 +19,7 @@ sections:
 
       - heading:
           logo: /logo_compass.png
-          label: Principal Software Enginer - Compass Labs, London
+          label: Principal Software Engineer - Compass Labs, London
           startdate: March 2023
           enddate: present
         points:
